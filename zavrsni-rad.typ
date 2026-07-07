@@ -68,8 +68,13 @@
 
 // TODO: Овде укључујете поглавља
 #include "poglavlja/1-uvod.typ"
-#include "poglavlja/2-stanje.typ"
+#include "poglavlja/2-teorijske_osnove.typ"
+#include "poglavlja/3-analiza_postojecih_resenja.typ"
+#include "poglavlja/4-dizajn_resenja.typ"
+#include "poglavlja/5-implementacija.typ"
+#include "poglavlja/6-rezultati_i_diskusija.typ"
 #include "poglavlja/7-zakljucak.typ"
+#include "poglavlja/8-buduci_rad.typ"
 
 
 
