@@ -3,6 +3,7 @@
 
 #import "metadata.typ": *
 #set page(paper: format_strane, margin: (y: 2.5cm, inside: 2cm, outside: 1.5cm))
+#set raw(syntaxes: "testa.sublime-syntax")
 #include "naslovna.typ"
 #pagebreak()
 #pagebreak()
