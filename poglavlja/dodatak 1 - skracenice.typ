@@ -12,9 +12,9 @@
         [AST], [Abstract Syntax Tree (Апстрактно синтаксно стабло)],
         [DSL], [Domain Specific Language (језик специфичан за домен)],
         [GPL], [General Purpose Language (језик опште намене)],
+        [HIR], [High-level Intermediate Representation (високонивојска међурепрезентација)],
         [JSON],[JavaScript Object Notation],
         [IDE], [Integrated Development Environment (интегрисано развојно окужење)],
         [LSP], [Language Server Protocol (протокол језичких сервера)],
-
     ),
 )
