@@ -24,7 +24,7 @@ contexts:
       scope: keyword.control.directive.testa
 
     # Keywords
-    - match: '\b(template|enum|type|extend|with|override|string_pattern|struct)\b'
+    - match: '\b(template|enum|type|extend|with|override|string_pattern|struct|ref)\b'
       scope: keyword.control.testa
 
     # Boolean literals
