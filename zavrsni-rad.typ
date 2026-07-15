@@ -73,7 +73,7 @@
 #include "poglavlja/3-analiza_postojecih_resenja.typ"
 #include "poglavlja/4-dizajn_resenja.typ"
 #include "poglavlja/5-implementacija.typ"
-#include "poglavlja/6-rezultati_i_diskusija.typ"
+#include "poglavlja/6-evaluacija_i_diskusija.typ"
 #include "poglavlja/7-zakljucak.typ"
 #include "poglavlja/8-buduci_rad.typ"
 
