@@ -9,8 +9,10 @@
 #dodatak(
     table(
         table.header[*Скраћеница*][*Опис*],
+        [API],  [Application Programming Interface (програмски интерфејс апликације)],
         [AST],  [Abstract Syntax Tree (апстрактно синтаксно стабло)],
         [BP],   [Binding Power (снага везивања)],
+        [CLI],  [Command Line Interface (интерфејс командне линије)],
         [DSL],  [Domain Specific Language (језик специфичан за домен)],
         [GPL],  [General Purpose Language (језик опште намене)],
         [GUI],  [Graphical User Interface (графички кориснички интерфејс)],
