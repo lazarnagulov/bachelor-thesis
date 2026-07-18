@@ -33,7 +33,7 @@
 
 #figure(
   ```testa
-  @import "skalarne_definicije.tmod";
+  @import skalarne_definicije;
 
   @output json { pretty = true; indent = 4; }
   @output_path "./izlaz/korisnici.json";
