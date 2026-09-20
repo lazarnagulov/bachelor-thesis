@@ -19,7 +19,6 @@
         [HIR], [High-level Intermediate Representation (високонивојска међурепрезентација)],
         [IR], [Intermediate Representation (међурепрезентација)],
         [JSON], [JavaScript Object Notation (текстуални формат за размену података)],
-        [LIR], [Low-level Intermediate Representation (нисконивојска међурепрезентација)],
         [LSP], [Language Server Protocol (протокол језичких сервера)],
         [MIR], [Medium-level Intermediate Representation (средњенивојска међурепрезентација)],
         [PRNG], [Pseudo-Random Number Generator (псеудослучајни генератор бројева)],
