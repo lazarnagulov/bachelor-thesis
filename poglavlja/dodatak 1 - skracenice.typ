@@ -13,6 +13,7 @@
         [AST], [Abstract Syntax Tree (апстрактно синтаксно стабло)],
         [BP], [Binding Power (снага везивања)],
         [CLI], [Command Line Interface (интерфејс командне линије)],
+        [CSV], [Comma-Separated Values (текстуални формат са вредностима одвојеним зарезом)],
         [DSL], [Domain Specific Language (језик специфичан за домен)],
         [GPL], [General Purpose Language (језик опште намене)],
         [GUI], [Graphical User Interface (графички кориснички интерфејс)],
@@ -23,6 +24,7 @@
         [MIR], [Medium-level Intermediate Representation (средњенивојска међурепрезентација)],
         [PRNG], [Pseudo-Random Number Generator (псеудослучајни генератор бројева)],
         [RPC], [Remote Procedure Call (позивање удаљених процедура)],
+        [SQL], [Structured Query Language (структурирани језик за упите)],
         [XML], [Extensible Markup Language (прошириви језик за означавање података)],
     ),
 )

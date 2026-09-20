@@ -21,18 +21,15 @@
 
 #let godina = [#datetime.today().year()]
 
-#let kljucne_reci = "Шаблон, завршни рад, упутство"
+#let kljucne_reci = "генерисање тест података, језик специфичан за домен, протокол језичких сервера, преводилац, " +  [_Rust_] + ", статичка анализа, стохастички генератор."
 #let apstrakt = [
-     Овај документ представља упутство за писање завршних радова на Факултету
-     техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
+    У раду су представљени дизајн и имплементација екстерног језика специфичног за домен (DSL) за генерисање тест података. Имплементиран је преводилац у програмском језику _Rust_, са лексичком, синтаксном и семантичком анализом и модуларном архитектуром заснованом на високонивојској међурепрезентацији (HIR). Генератор подржава статистичке расподеле и очување референцијалног интегритета. Реализован је и језички сервер (LSP) за статичку анализу и допуњавање кода. Мерење перформанси показује потрошњу меморије од 2 MB и време извршавања од 3,63 s при генерисању 500.000 записа. Решење постиже краће време извршавања од референтних имплементација у _Python_-у и _JavaScript_-у и испуњава критеријуме интерактивног рада за датотеке до 100.000 линија кода.
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "Template, thesis, tutorial"
+#let kljucne_reci_eng = "test data generation, domain-specific language, Language Server Protocol, compiler, Rust, static analysis, stochastic generation."
 #let apstrakt_eng = [
-     This document provides guidelines for writing final theses at the Faculty
-     of Technical Sciences, University of Novi Sad. At the same time, it serves
-     as a Typst template.
+    This thesis presents the design and implementation of an external Domain-Specific Language (DSL) for test data generation. The toolchain includes a compiler implemented in Rust that performs lexical, syntactic, and semantic analysis, with a modular architecture based on a High-Level Intermediate Representation (HIR). The generator supports statistical distributions and preserves referential integrity. A Language Server Protocol (LSP) server provides static analysis and code completion. Performance evaluation shows a memory footprint of 2 MB and an execution time of 3.63 s for generating 500,000 records. The solution achieves shorter execution times than reference implementations in Python and JavaScript and meets interactive performance requirements for files of up to 100,000 lines of code.
 ]
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
