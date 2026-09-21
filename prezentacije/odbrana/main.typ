@@ -26,24 +26,6 @@
 
 #include "slajdovi/1-motivacija.typ"
 #include "slajdovi/2-cilj.typ"
-#include "slajdovi/3-primer.typ"
-#include "slajdovi/4-arhitektura.typ"
-#include "slajdovi/5-moduli.typ"
-
-
-= Протокол језичких сервера
-
-#lorem(80)
-
-
-= Евалуација
-
-#lorem(80)
-
-= Резиме реализације
-
-#lorem(80)
-
-= Закључак
-
-#lorem(80)
+#include "slajdovi/3-arhitektura.typ"
+#include "slajdovi/4-evaluacija.typ"
+#include "slajdovi/5-zakljucak.typ"
