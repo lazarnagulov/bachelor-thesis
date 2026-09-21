@@ -24,18 +24,9 @@
 
 #outline-slide()
 
-= Проблем и мотивација
-
-#lorem(80)
-
-= Циљ
-
-#lorem(80)
-
-= Пример
-
-#lorem(80)
-
+#include "slajdovi/1-motivacija.typ"
+#include "slajdovi/2-cilj.typ"
+#include "slajdovi/3-primer.typ"
 
 = Архитектура
 
