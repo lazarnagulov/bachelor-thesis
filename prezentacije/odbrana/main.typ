@@ -28,10 +28,7 @@
 #include "slajdovi/2-cilj.typ"
 #include "slajdovi/3-primer.typ"
 #include "slajdovi/4-arhitektura.typ"
-
-= HIR и систем модула
-
-#lorem(80)
+#include "slajdovi/5-moduli.typ"
 
 
 = Протокол језичких сервера

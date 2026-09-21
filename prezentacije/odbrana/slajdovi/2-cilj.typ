@@ -1,97 +1,75 @@
+#import "../common.typ": node, arr, tag
+
 = Циљ
 
-#v(0.3em)
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 2em,
+  row-gutter: 0.8em,
 
-#align(center)[
+  [
+    #text(size: 12pt)[
+      + *DSL за опис тест података*
+        - типови и шаблони
+        - ограничења и структуре
+        - референце и енумерације
 
-  #rect(
-    width: 32%,
-    inset: 11pt,
-    radius: 8pt,
-    fill: rgb("#F5F5F5"),
-    stroke: 1.5pt + rgb("#9E9E9E"),
-  )[
-    #align(center)[
-      #text(size: 17pt, weight: "bold")[Дизајн језика]
+      + *Преводилац и генерација*
+        - AST, семантичка анализа и HIR
+        - генерисање JSON, CSV и XML
+        - систем модула и `.tmod`
+
+      + *LSP подршка*
+        - језички сервер за DSL
+        - интеграција са уредницима текста
+        - језичке функционалности током рада
     ]
-  ]
+  ],
+  [
+    #align(center + horizon)[
+      #grid(
+        columns: (1fr, 1fr),
+        column-gutter: 1em,
+        align: center,
 
-  #grid(
-    columns: (1fr, 0.16fr, 0.7fr, 0.16fr, 1fr),
-    column-gutter: 0.5em,
+        [
+          #node(
+            "DSL",
+            subtitle: "опис тест података",
+            fill: rgb("#F3EFFF"),
+            stroke: rgb("#7E57C2"),
+          )
 
-    rect(
-      width: 100%,
-      inset: 11pt,
-      radius: 8pt,
-      fill: rgb("#E8F5E9"),
-      stroke: 1.5pt + rgb("#43A047"),
-    )[
-      #align(center)[
-        #text(size: 15pt, weight: "bold")[
-          Генерисање
-          података
-        ]
-      ]
-    ],
+          #arr(symbol: "↓")
 
-    align(center + horizon)[
-    ],
+          #node(
+            "Преводилац",
+            subtitle: "AST → анализа → HIR",
+            fill: rgb("#E8F5E9"),
+            stroke: rgb("#43A047"),
+          )
 
-    circle(
-      radius: 42pt,
-      fill: rgb("#1565C0"),
-    )[
-      #align(center + horizon)[
-        #text(
-          size: 23pt,
-          weight: "bold",
-          fill: white,
-        )[DSL]
-      ]
-    ],
+          #arr(symbol: "↓")
 
-    align(center + horizon)[],
+          #grid(
+            columns: (auto, auto, auto),
+            column-gutter: 0.4em,
+            align: center,
 
-    rect(
-      width: 100%,
-      inset: 11pt,
-      radius: 8pt,
-      fill: rgb("#E8F1FB"),
-      stroke: 1.5pt + rgb("#1565C0"),
-    )[
-      #align(center)[
-        #text(size: 15pt, weight: "bold")[
-          Анализа
-          програма
-        ]
-      ]
-    ],
-  )
-
-  #rect(
-    width: 32%,
-    inset: 11pt,
-    radius: 8pt,
-    fill: rgb("#FFF3E0"),
-    stroke: 1.5pt + rgb("#EF6C00"),
-  )[
-    #align(center)[
-      #text(size: 16pt, weight: "bold")[
-        Интеграција са уредницима текста
-      ]
+            tag("JSON"),
+            tag("CSV"),
+            tag("XML"),
+          )
+        ],
+        [
+          #node(
+            "LSP",
+            subtitle: "подршка у уреднику",
+            fill: rgb("#E3F2FD"),
+            stroke: rgb("#1565C0"),
+          )
+        ],
+      )
     ]
-  ]
-
-  #rect(
-    width: 28%,
-    inset: 9pt,
-    radius: 8pt,
-    fill: rgb("#FFF3E0"),
-    stroke: 1.5pt + rgb("#EF6C00"),
-  )[
-    #align(center)[
-      #text(size: 15pt, weight: "bold")[LSP подршка]
-    ]
-  ]
-]
+  ],
+)

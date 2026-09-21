@@ -1,90 +1,16 @@
 #import "../common.typ"
-= Архитектура
 
-#align(center + horizon)[
-  #block(width: 100%)[
-    #set text(size: 22pt)
-    #set list(spacing: 2em)
-   
-    *Преводилац* 
-    -- Обрада DSL изворног кода и генерисање излазних формата.
-    
-    *Језички сервер* 
-    -- Имплементација LSP-a за интеграцију са уредницима текста.
-
-    *Генератор*
-    -- Превођење HIR-а у генерисане податке различитих излазних формата.
-  ]
-]
-== Преводилац
+= Архитектура система
 
 #align(center)[
-  #grid(
-    columns: (auto, auto, auto, auto, auto),
-    column-gutter: 0.8em,
-    row-gutter: 1em,
-    align: center + horizon,
-
-    common.node("DSL", subtitle: "изворни код", w: 100pt),
-    common.arr(symbol: "→"),
-    common.node("Лексички\nанализатор", fill: rgb("#E8F1FB"), stroke: rgb("#1565C0")),
-    common.arr(symbol: "→"),
-    common.node("Синтаксни\nанализатор", fill: rgb("#E8F1FB"), stroke: rgb("#1565C0")),
-
-    [], [], [], [], common.arr(symbol: "↓"),
-
-    [],
-    [],
-    common.node("Семантички\nанализатор", fill: rgb("#E8F1FB"), stroke: rgb("#1565C0")),
-    common.arr(symbol: "←"),
-    common.node("AST", fill: rgb("#F3EFFF"), stroke: rgb("#7E57C2"), w: 100pt),
-
-    [], [], common.arr(symbol: "↓"), [], [],
-
-    [], [], common.node("HIR", fill: rgb("#F3EFFF"), stroke: rgb("#7E57C2"), w: 100pt), [], [],
-
-    [], [], 
-    grid(columns: 2, column-gutter: 3em, common.arr(symbol: "↙"), common.arr(symbol: "↘")), 
-    [], [],
-
-    grid.cell(colspan: 5)[
-      #grid(
-        columns: 2,
-        column-gutter: 2.5em,
-        common.node("Генератор", subtitle: "JSON · CSV · XML", w: 150pt, fill: rgb("#E8F5E9"), stroke: rgb("#43A047")),
-        common.node("Модули", w: 110pt, fill: rgb("#FFF3E0"), stroke: rgb("#EF6C00"))
-      )
-    ]
-  )
+  #image("../slike/hl_dijagram.svg", height: 52%)
 ]
 
-== Језички сервер
+#v(0.3em)
+- *Архитектура дељеног језгра:* Заједнички синтаксни и семантички анализатор за све подсистеме.
+- *Раздвајање слојева:* HIR служи као граница између аналитичког језгра и извршних модула (CLI и LSP).
 
-#align(center)[
-  #grid(
-    columns: (auto, auto),
-    column-gutter: 4em,
-    row-gutter: 1.5em,
-    align: center + horizon,
-
-    grid.cell(colspan: 2)[
-      #common.node("LSP", w: 120pt, fill: rgb("#F3EFFF"), stroke: rgb("#7E57C2"))
-    ],
-
-    common.arr(symbol: "↙"), common.arr(symbol: "↘"),
-
-    common.node("Синтаксни\nанализатор", fill: rgb("#E8F1FB"), stroke: rgb("#1565C0")),
-    common.node("Семантички\nанализатор", fill: rgb("#E8F1FB"), stroke: rgb("#1565C0")),
-
-    common.arr(symbol: "↘"), common.arr(symbol: "↙"),
-
-    grid.cell(colspan: 2)[
-      #common.node("Функције\nуредника текста", w: 140pt, fill: rgb("#E8F5E9"), stroke: rgb("#43A047"))
-    ]
-  )
-]
-
-== Генератор
+== Архитектура генератора података
 
 #align(center)[
   #grid(
@@ -92,7 +18,6 @@
     column-gutter: 2em,
     align: horizon,
 
-    // ЛЕВО — архитектура генератора
     [
       #align(center)[
         #grid(
@@ -178,3 +103,7 @@
     ],
   )
 ]
+
+#v(0.5em)
+- *Јединствен улаз:* HIR служи као заједничка основа за генерисање свих излазних формата.
+- *Проширивост излаза:* `FileGenerator` интерфејс омогућава лако додавање нових формата (JSON, CSV, XML...).

@@ -67,17 +67,5 @@
 
   #v(0.3em)
 
-  #rect(
-    width: 58%,
-    inset: 9pt,
-    radius: 6pt,
-    fill: rgb("#FFF8E1"),
-    stroke: 1pt + rgb("#D6A500"),
-  )[
-    #align(center)[
-      #text(size: 14pt)[
-        понављање и мешање описа са имплементацијом
-      ]
-    ]
-  ]
+  Понављање и мешање описа са имплементацијом.
 ]
