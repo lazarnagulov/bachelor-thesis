@@ -1,6 +1,6 @@
 #import "@preview/touying:0.7.4": *
 #import themes.stargazer: *
-
+#set raw(syntaxes: "/testa.sublime-syntax")
 #import "@preview/numbly:0.1.0": numbly
 
 #show: stargazer-theme.with(
@@ -27,16 +27,7 @@
 #include "slajdovi/1-motivacija.typ"
 #include "slajdovi/2-cilj.typ"
 #include "slajdovi/3-primer.typ"
-
-= Архитектура
-
-#lorem(80)
-
-
-= Генерација
-
-#lorem(80)
-
+#include "slajdovi/4-arhitektura.typ"
 
 = HIR и систем модула
 

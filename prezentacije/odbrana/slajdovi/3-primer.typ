@@ -20,10 +20,9 @@
       fill: rgb("#1565C0"),
     )[DSL]
     #raw(
-      lang: "text",
+      lang: "testa",
       block: true,
-      "
-@import course;
+      "@import course;
 type StudentId = 
   string_pattern \"S${#[7]}\";
 
@@ -33,6 +32,7 @@ template Student {
     course = ref Course.name;
     year = int [range=1..=4];
 }
+
 @generate Student[100];"
   )
   ],
@@ -60,12 +60,18 @@ template Student {
       #raw(
       lang: "json",
       block: true,
-      "{
+      "[{
   \"id\": \"S4821937\",
   \"name\": \"Ana\",
   \"year\": 3,
   \"course\": \"Programming\"
-}",
+},
+{
+  \"id\": \"S9023421\",
+  \"name\": \"Marko\",
+  \"year\": 2,
+  \"course\": \"Web Design\"
+}...]",
     )
   ],
 )

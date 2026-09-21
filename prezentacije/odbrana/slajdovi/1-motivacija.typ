@@ -52,12 +52,12 @@
         )[DSL]
 
         #v(0.5em)
-
-              #raw(
-        block: true,
+            #raw(
+            lang: "testa",
+            block: true,
         "template User {
   name = string;
-  age = int;
+  age = int [range=1..=100];
 }",
       )
         #text(size: 14pt)[декларативни опис]

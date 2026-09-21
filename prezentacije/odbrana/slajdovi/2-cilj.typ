@@ -8,8 +8,8 @@
     width: 32%,
     inset: 11pt,
     radius: 8pt,
-    fill: rgb("#E8F1FB"),
-    stroke: 1.5pt + rgb("#1565C0"),
+    fill: rgb("#F5F5F5"),
+    stroke: 1.5pt + rgb("#9E9E9E"),
   )[
     #align(center)[
       #text(size: 17pt, weight: "bold")[Дизајн језика]
@@ -57,8 +57,8 @@
       width: 100%,
       inset: 11pt,
       radius: 8pt,
-      fill: rgb("#F3EFFF"),
-      stroke: 1.5pt + rgb("#7E57C2"),
+      fill: rgb("#E8F1FB"),
+      stroke: 1.5pt + rgb("#1565C0"),
     )[
       #align(center)[
         #text(size: 15pt, weight: "bold")[
@@ -78,7 +78,7 @@
   )[
     #align(center)[
       #text(size: 16pt, weight: "bold")[
-        Интеграција са IDE
+        Интеграција са уредницима текста
       ]
     ]
   ]
@@ -87,8 +87,8 @@
     width: 28%,
     inset: 9pt,
     radius: 8pt,
-    fill: rgb("#E8F1FB"),
-    stroke: 1.5pt + rgb("#1565C0"),
+    fill: rgb("#FFF3E0"),
+    stroke: 1.5pt + rgb("#EF6C00"),
   )[
     #align(center)[
       #text(size: 15pt, weight: "bold")[LSP подршка]
